@@ -1,0 +1,20 @@
+{
+  "name": "tdd-exercises",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exercícios de TDD em TypeScript com Jest",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest --runInBand",
+    "coverage:exercise1": "jest --runInBand tests/exercise1 --coverage --coverageDirectory=coverage/exercise1 --collectCoverageFrom=src/exercise1/**/*.ts",
+    "coverage:exercise2": "jest --runInBand tests/exercise2 --coverage --coverageDirectory=coverage/exercise2 --collectCoverageFrom=src/exercise2/**/*.ts",
+    "coverage:exercise3": "jest --runInBand tests/exercise3 --coverage --coverageDirectory=coverage/exercise3 --collectCoverageFrom=src/exercise3/**/*.ts",
+    "coverage": "npm run coverage:exercise1 && npm run coverage:exercise2 && npm run coverage:exercise3"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.14",
+    "jest": "29.7.0",
+    "ts-jest": "29.4.5",
+    "typescript": "5.9.3"
+  }
+}
